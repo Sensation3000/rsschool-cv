@@ -1,5 +1,6 @@
 # Yanberdina Adelya
 QA-engineer
+
 ********* 
 ## Contact information:
 * Phone: +7 962 057 0578 
@@ -8,7 +9,7 @@ QA-engineer
 
 ********* 
 ## Briefly About Myself:
-
+Curious and adventurous in exploring new tehnologies. Interested in developing my skills as QA-engineer
 
 ********* 
 ## Skills and Proficiency:

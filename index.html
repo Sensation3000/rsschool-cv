@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills and Proficiency</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="main" id="profile">
+          <img src="./assets/img/qa.png" alt="avatar" width="300" height="300">
+          <h1 class="header-title">Adelya Sensation</h1>
+          <p class="header-title">QA Engineer</p>
+        </section>
+
+        <section class="main">
+          <div id="aboutme" class="block-main">
+            <h2>About me</h2>
+            <p>
+              Curious and adventurous in exploring new tehnologies. Interested
+              in developing my skills as QA-engineer
+            </p>
+          </div>
+        </section>
+
+        <section class="main">
+          <div id="skills" class="block-main">
+            <h2>Skills</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>Cypress</li>
+              <li>Playwright</li>
+              <li>Git</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div id="code" class="block-main">
+            <h2>Code Example</h2>
+            <p>
+              У вас есть массив со скобками, предположим [ ‘(‘, ‘)’, ‘(‘, ‘)’,
+              ‘)’] количество элементов и последовательность может быть разной.
+              Нужно выяснить, у каждой ли скобки есть соответствующая пара
+              (открывающая и закрывающая).
+            </p>
+
+            <p>Решение</p>
+
+            <div class="code">
+              <pre>
+                           <code>
+                                let arr = [ '(', ')', '(', ')', ')'];
+                                let leftSkobka = 0;
+                                let rightSkobka = 0;
+                                for (let i = 0; i &lt; arr.length; i++) {   
+                                   if (arr[i] === '(') {
+                                   leftSkobka = leftSkobka + 1
+                                   console.log("There is left Skobka")
+                                 }
+                                   if (arr[i] === ')') {
+                                   rightSkobka = rightSkobka + 1
+                                   console.log("There is right Skobka")
+                                 }
+                                }
+                                console.log(`${leftSkobka} = left Skobka`)
+                                console.log(`${rightSkobka} = right Skobka`)
+                                if (rightSkobka == leftSkobka) {
+                                  console.log("We have all package")
+                                } else if (rightSkobka > leftSkobka){
+                                  console.log("We have shortage of left Skobka")
+                                } else {
+                                  console.log("We have shortage of right Skobka")
+                                }
+                                //The answer:
+                                //2 = left Skobka
+                                //3 = right Skobka
+                                //We have shortage of left Skobka
+                              </code>
+                        </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="main">
+          <div id="languages" class="block-main">
+            <h2>Languages</h2>
+            <ul>
+              <li>Russian - native speaker.</li>
+              <li>English - B2 (going on C1).</li>
+            </ul>
+          </div>
+          <div id="education" class="block-main">
+            <h2>Education</h2>
+            <ul>
+              <li>Dostoevsky Omsk State University</li>
+              <li>
+                Red Rover School (QA Theory, Javascript, Cypress, Playwright)
+              </li>
+              <li>Mathhub (SQL,Javascript)</li>
+            </ul>
+          </div>
+          <div id="contacts" class="block-main">
+            <h2>Contact</h2>
+            <ul>
+              <li>
+                GitHub:
+                <a href="https://github.com/Sensation3000" target="_blank"
+                  >Sensation3000</a
+                >
+              </li>
+              <li>Discord: adelya_sensation(@Sensation3000)</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <section class="footer">
+
+          <div class="block">
+            <h3>© 2024 by Adelya Sensation</h3>
+          </div>
+          <div class="block">
+            <a href="https://github.com/Sensation3000" target="_blank"
+              >Github link</a>
+          </div>
+          <div class="block">
+            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+              <img
+                src="/assets/swg/rs-school-logo.svg"
+                alt="rs_school logo"
+                width="150"
+                height="130"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
